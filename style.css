@@ -1,0 +1,134 @@
+body {
+    font-family: helvetica, sans-serif;
+}
+
+.timeline {
+    width: 100%;
+    min-height: 32px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.slot {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    background-color: #ffffff;
+    display: inline-block;
+    width: 4%;
+    border: 1px solid rgb(128, 128, 128);
+    min-height: 24px;
+    margin-left: 0.5%;
+    margin-bottom: 8px;
+    border-radius: 4px;
+
+    font-size: 8px;
+    text-align: center;
+    padding-top: 2px;
+    color: #999999;
+
+    cursor: pointer;
+}
+
+.slot .actor {
+
+}
+
+.wait {
+    background-color: #cecece;
+}
+
+.chargeup {
+    background-color: #ffcece;
+}
+
+.attack {
+    background-color: #cc0000;
+    color: #ffffff;
+}
+
+.defend {
+    background-color: #ceceff;
+}
+
+.blocks {
+    display: flex;
+}
+
+.block {
+    border-radius: 8px;
+    border: 1px solid rgb(128, 128, 128);
+    width: 256px;
+    padding: 4px;
+    margin-right: 8px;
+}
+
+.block .label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.block .actors {
+
+}
+
+.block .actor {
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    padding: 4px;
+
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.block .actor:hover {
+    background-color: #666666;
+}
+
+.block .actor:after {
+    content: '>';
+    float: right;
+}
+
+.visible {
+    display: block !important;
+}
+
+#action-form {
+    display: none;
+}
+
+.action-type option {
+    text-transform: capitalize;;
+}
+
+button {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+
+    /*min-height: 32px;
+    min-width: 32px;
+    line-height: 32px;
+    padding: 4px;
+    margin: 0;
+    margin-right: 8px;
+
+    font-size: 24px;*/
+}
+

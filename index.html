@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <input type="text" id="name">
+        <button id="add">&#10133;</button>
+        <button onclick="play();">&#9654;</button>
+
+        <div class="timeline" id="timeline"></div>
+
+        <div class="blocks">
+            <div class="block">
+                <div class="label">Available actors</div>
+                <div id="idle-container" class="actors">
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="label">All actors</div>
+                <div id="all-container" class="actors">
+                </div>
+            </div>
+
+            <div class="block" id="action-form">
+                <div id="action-label"></div>
+                <label>
+                    Offset:
+                    <input type="" id="action-offset" value="0">
+                </label>
+                <label>
+                    Blocks:
+                    <input type="" id="action-blocks" value="4">
+                </label>
+                <select id="action-type">
+                </select>
+                <button id="action-save" onclick="create_action();">&#10133;</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
